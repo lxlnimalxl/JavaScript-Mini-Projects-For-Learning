@@ -58,10 +58,10 @@ function pauseSong() {
 
 // Play or Pause Event Listener
 playBtn.addEventListener("click", function () {
-  if (playBtn) {
-    pauseSong()
-  } else {
+  if (isPlaying) {
     playSong()
+  } else {
+    pauseSong()
   }
 })
 
@@ -151,3 +151,4 @@ nextBtn.addEventListener("click", nextSong);
 music.addEventListener("ended", nextSong);
 music.addEventListener("timeupdate", updateProgressBar);
 progressContainer.addEventListener("click", setProgressBar);
+
