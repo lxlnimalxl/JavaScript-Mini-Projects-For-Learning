@@ -7,7 +7,7 @@
   100% {
     transform: translate3d(0, 0, 1px) rotate(360deg);
   }
-}a
+}
 
 .background {
   position: fixed;
@@ -15,7 +15,7 @@
   height: 100vh;
   top: 0;
   left: 0;
-  background: #4cb8b6;
+  background: white;
   overflow: hidden;
 }
 
@@ -179,7 +179,7 @@
 
 .fas {
   font-size: 30px;
-  color: rgb(129, 129, 129);
+  color: black;
   cursor: pointer;
   user-select: none;
 }
@@ -192,4 +192,26 @@
   font-size: 40px;
   margin-left: 20%;
   margin-right: 20%;
+}
+
+#progressBar::-webkit-slider-runnable-track {
+  background: linear-gradient(to right, #3e7fff 0%, #ff6f61 100%);
+  height: 6px;
+  border-radius: 4px;
+}
+#progressBar::-moz-range-track {
+  background: linear-gradient(to right, #3e7fff 0%, #ff6f61 100%);
+  height: 6px;
+  border-radius: 4px;
+}
+#progressBar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  border: 2px solid #3e7fff;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -3px;
+  transition: background 0.3s, border-color 0.3s;
 }
